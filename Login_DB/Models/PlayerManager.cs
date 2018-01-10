@@ -6,6 +6,9 @@ namespace Login_DB.Models
 {
     public class PlayerManager
     {
+        private static PlayerManager _instance;
+        public static PlayerManager Instance => _instance ?? (_instance = new PlayerManager());
+
         private PlayerContext _playerDB = new PlayerContext();
 
         private Dictionary<string, string> _loggedIn = new Dictionary<string, string>();

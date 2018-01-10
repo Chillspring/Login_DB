@@ -4,7 +4,7 @@
     ViewBag.Title = "LoggedIn";
 }
 
-<h2>Logged in as TODO </h2>
+<h2>Logged in as </h2>
 
 <table class="table">
     <tr>
@@ -30,3 +30,4 @@
     }
 
 </table>
+<input type="button" value="Logout" class="btn btn-default" id="logout" onclick="location.href='@Url.Action("Logout_Click", "Login")'"/>
